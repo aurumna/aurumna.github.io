@@ -1,430 +1,88 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Patrick Sy | PORTFOLIO</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link href="animate.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="icon" type="image/png" href="LOGO.png">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-	<script src="js/scripts.js"></script>
-
-	<script type="text/javascript">
-		$(document).ready(function(){
-			$("#logo").addClass("animated jackInTheBox");
-			$(".idpic").addClass("animated slideInLeft");
-			$(".header2").addClass("animated bounceInUp");
-			$(".designblock").addClass("animated slideInLeft");
-		});
-
-		$(document).ready(function(){
-			$('.idpic').css("display","none");
-			$('.header1').css("display","none");
-			$('hr').css("display","none");
-			$('.txt').css("display","none");
-			$('.txt2').css("display","none");
-			$('.header2').css("display","none");
-			$('#wrapper2').hide();
-			$('#wrapper3').hide();
-			$('#home').css("color","#FF1443");
-			$('#imagecontainer1').hide();
-			$('#imagecontainer2').hide();
-			$('#imagecontainer3').hide();
-			$('#wrapper2').css("display","none")
-			$('#wrapper3').css("display","none")
-		});
-
-		$(document).ready(function(){
-			$('.idpic').fadeIn(1500);
-			$('.header1').fadeIn(1800);
-			$('.txt').fadeIn(2300);
-			$('hr').fadeIn(2800);
-			$('.txt2').fadeIn(3100);
-			$(".header2").fadeIn(3800);
-			
-		});
-
-		$(document).ready(function(){  //HOME
-		    $("#home").click(function(){
-		        $("#wrapper1").slideDown();
-		        $('#wrapper2').fadeOut(300);
-		        $('#wrapper3').fadeOut(300);
-		        $('#home').css("color","#FF1443");
-		        $("#graphicdesign").css("color","white");
-		        $("#digitaldesign").css("color","white");
-		    });
-		});
+	<title>Patrick Sy</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Archivo+Black|Pacifico|Comfortaa" rel="stylesheet">
+<style>
+.nav ul{list-style:none;background-color:#ff2641;text-align:center;padding:0;margin:0}
+	.nav li{font-family:"Comfortaa" ;font-size:0.5em;line-height:40px;height:40px;border-bottom:1px solid #888;font-weight: bold}
+	.nav a{text-decoration:none;color:#fff;display:block;transition:.3s background-color}
+	.nav a:hover{background-color:#cd001a;text-decoration:none;color:#fff;display:block;}
+	.nav a.active{background-color:#fc6277;color:#fff;cursor:default}
+	@media screen and (min-width: 600px) {
+		.nav li{width:180px;border-bottom:none;height:30px;line-height:30px;font-size:0.9em;display:inline-block;margin-right:-4px}
+	}
 
 
-		$(document).ready(function(){ //GRAPHIC DESIGN
-		    $("#graphicdesign").click(function(){
-		        $("#wrapper1").slideUp();
-		        $("#wrapper2").fadeIn(1000);
-		        $("#wrapper3").fadeOut(300);
-		        $("#graphicdesign").css("color","#FF1443");
-		        $("#home").css("color","white");
-		        $("#digitaldesign").css("color","white");
-		    });
-		});
-
-		$(document).ready(function(){  //HOME
-		    $("#digitaldesign").click(function(){
-		    	$('#wrapper1').slideUp();
-		    	$("#wrapper3").fadeIn(1000);
-		        $('#wrapper2').fadeOut(300);
-		        $("#digitaldesign").css("color","#FF1443");
-		        $("#home").css("color","white");
-		        $("#graphicdesign").css("color","white");
-		    });
-		});
-
-
-		$(document).ready(function(){ 
-		    $("#viewofad").click(function(){
-				$("#imagecontainer1").slideToggle(800);
-				$(this).text(function(i, v){
-               		return v === 'VIEW' ? 'HIDE' : 'VIEW'
-           		})
-		    });
-		});
-
-		$(document).ready(function(){ 
-		    $("#viewsemanual").click(function(){
-				$("#imagecontainer2").slideToggle(800);
-				$(this).text(function(i, v){
-               		return v === 'VIEW' ? 'HIDE' : 'VIEW'
-           		})
-		    });
-		});
-
-		$(document).ready(function(){ 
-		    $("#viewfnc").click(function(){
-				$("#imagecontainer3").slideToggle(800);
-				$(this).text(function(i, v){
-               		return v === 'VIEW' ? 'HIDE' : 'VIEW'
-           		})
-		    });
-		});
-
-
-
-	</script>
-	<style>
-	@font-face {
-    font-family: "Lemon/Milk Regular";
-    src: url("LemonMilk.otf");
+.thumb {
+  border: 2px solid #ddd;
+    border-radius: 4px;
+    padding: 3px;
+    width: 20vw;
+    transition: 0.5s;
 }
 
-	body
-	{
-		background-image: url("dotbg3.png");
-	}
-	body::-webkit-scrollbar {
-		width: 8px;
-	}
-	
-	body::-webkit-scrollbar-track {
-		opacity: 0;
-	}
-	
-	body::-webkit-scrollbar-thumb {
-		background-color: #FF1443;
-		outline: 1px solid #FF1443;
-	}
-	.mainheader
-	{
-		width: 100%;
-		height: 5vw;
-		background-color: #131314;
-		padding-top: 20px;
-		padding-bottom: 20px;
-		margin:auto;
-		text-align: center;
-		color: white;
-		font-family: "Lemon/Milk Regular";
-		font-size: 3vw;
-	}
-	.content
-	{
-		width: 100%;
-		font-family: "Monsterrat"
-		margin: 1vw;
-		font-size: 3vh;
-	}
-	.containerer
-	{
-		position: relative;
-		width: 80%;
-		padding-left: 20%;
-	}
-	.navi
-	{
-		font-size: 2.8vh;
-		font-family: "Bree Serif";
-		margin: auto;
-		color: white;
-		transition: 0.5s;
+.thumb:hover {
+    box-shadow: 0 0 5px 1px #FF5166;
+    border: 2px solid white;
+    transition: 0.5s;
+}
 
-	}
-	.navitxt
-	{
-		color: white;
-		transition: 0.5s;
-		cursor: pointer;
-	}
-	.navitxt:hover
-	{
-		transition: 0.5s;
-		color: #FF1443;
-		font-size: 3vh;
-		text-shadow: 0px 2px #000;
-	}
-	.padder
-	{
-		padding-left: 2vw;
-	}
-	.idpic
-	{
-		border-radius: 250vw;
-		width: 35%;
-		float: left;
-		margin-left: 5vw;
-		margin-top: 5vh;
-	}
-	.mainbody
-	{
-		padding-left: 34vw;
-		padding-top: 2vh;
-	}
-	.header1
-	{
-		display: none;
-		font-family: "Lemon/Milk Regular";
-		color: white;
-		font-size: 10vh;
-		letter-spacing: 3px;
-		text-align: center;
-		margin-top: 10px;
-	}
+.header
+{
+  font-family: "Comfortaa";
+}
 
-	.header2
-	{
-		
-		font-family: "Lemon/Milk Regular";
-		color: white;
-		font-size: 6vh;
-		letter-spacing: 3px;
-		margin-left: 2vw;
-		padding: 1vh;
-		text-align: center;
-		background-color: #FF1443;
-		width: 32vw;
-	}
-	hr
-	{
-		background-color: #FF1443;
-		height: 3px;
-		border: none;
-		width: 40vw;
-		margin-top: 2px;
-
-	}
-	.mountain
-	{
-		background: url("mountainbg.png");
-		width: 100%;
-		height: 89.5vh;
-		background-size: 120vw;
-		background-position: 0px;
-	}
-
-		.mountain2
-	{
-		background: url("dotbg.png");
-		width: 100%;
-		min-height: 89.5vh;
-		background-size: 120vw;
-
-	}
-
-
-	.mountain3
-	{
-		background: url("dotbg2.png");
-		width: 100%;
-		min-height: 89.5vh;
-		background-size: 120vw;
-
-	}
-	.txt
-	{
-		color: white;
-		font-family: Montserrat;
-		text-align: center;
-		margin-top: -20px;
-		word-spacing: 10px;
-		font-size: 2.5vh;
-	}
-	.txt2
-	{
-		display: none;
-		color: white;
-		font-family: Montserrat;
-		text-align: justify;
-		width: 40vw;
-		margin-top: -15px;
-		margin-left: 16vw;
-		font-size: 2vh;
-		word-spacing: 10px;
-	}
-
-	.buttonz
-	{
-		background-color: #FF1443;
-		width: 9vw;
-		padding: 8px;
-		color: white;
-		font-family: Montserrat;
-		border: none;
-		transition: 0.7s;
-		margin-left: 15.5vw;
-	}
-	.buttonz:hover
-	{
-		color: #fff;
-		background-color: #4d0017;
-		transition: 0.7s;
-	}
-
-		.buttonz2
-	{
-		background-color: #FF1443;
-		width: 100px;
-		padding: 8px;
-		color: white;
-		font-family: Montserrat;
-		border: none;
-		transition: 0.7s;
-	}
-	.buttonz2:hover
-	{
-		color: #fff;
-		background-color: #4d0017;
-		transition: 0.7s;
-	}
-
-	.menu
-	{
-		color: white;
-		font-family: Montserrat;
-		font-size: 2vh;
-		padding-left: 2.6vw;
-		margin-top: -2vh;
-	}
-
-	.tinytext
-	{
-		color: white;
-		font-size: 1.8vh;
-		font-family: Montserrat;
-	}
-
-	.designblock
-	{
-		color:white;padding-left:1vw;margin-left: 2vw;font-family: Montserrat; border-left: 10px solid #FF1443
-	}
-
-	img.designs
-	{
-		border: 5px solid #FF1443;
-		height: 35vh;
-		transition: .5s;
-	}
-
-	img.designs:hover
-	{
-		border: 5px solid #ff6281;
-		margin-top: -10px;
-		box-shadow: 0px 5px #260e13;
-		transition: .5s;
-	}
-
+.divider
+{
+  border: none;
+  background-color: #FF5166;
+  height: 2px;
+  width: auto;
+}
 </style>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Archivo+Black|Pacifico|Comfortaa" rel="stylesheet">
+
 </head>
-
 <body>
-
-	<div class=mainheader><table class=navi>
-		<tr>
-			<td class=navitxt id=home>Home</td>
-			<td class="padder navitxt" id=graphicdesign>Graphic Design</td>
-			<td class="padder navitxt" id=digitaldesign>Digital Design</td>
-			<td class="padder navitxt">Pixel Art</td>
-			<td class="padder navitxt">Traditional Art</td>
-			<td class="padder navitxt">Contact</td>
-		</tr>
-	</table></div>
-	<div class=mountain id=wrapper1><img src="pic.png" class=idpic> <!---WRAPPER 1-->
-		<div class=mainbody>
-			<p class=header1><br><img src="LOGO.png" width=10% id=logo><br>PATRICK SY</p>
-			<div class=txt>CREATIVE. DETERMINED. PASSIONATE.</div><hr>
-			<div class=txt2>I'm currently a student at the University of Santo Tomas taking up BS Information Technology 
-				specializing in Web and Mobile Development. I specialize in doing Front-end development but I am also capable
-				with a bit of back-end development. I am also proficient with graphic design and creating pixel art.<br><br>
-				<button class="buttonz" onclick="window.open('resume.pdf')"><i class="fa fa-file-pdf-o"></i> RESUME</button>
+  <div style="text-align:center">
+    &nbsp;&nbsp;<img src=logo.png>
+  </div>
+  <div style="margin-left: 15px;margin-right: 15px">
+			<div class="nav">
+				<ul>
+					<li><a href="index.html" class=active>Graphic Design</a></li>
+					<li><a href="uidesign.html">UI Design</a></li>
+					<li><a href="#">Misc. Art</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
 			</div>
-		</div>
-	</div>															
-<!---WRAPPER 2-->
-	<div class=mountain2 id=wrapper2><br><p class=header2>GRAPHIC DESIGN</p>
-		<div class=designblock>10TH OFAD DESIGN LAYOUT CONTEST (2018)<br>
-			<p class=tinytext>This was my entry for the 10TH OFAD DESIGN LAYOUT CONTEST. The contest was held by the Office for Admissions of the University of Santo Tomas where participants were <br> asked to create various layout design for the promotional materials to be used by applicants for the A.Y. 2018-2019.</p>
-			<button class=buttonz2 id=viewofad>VIEW</button>
-			<div id=imagecontainer1><br>
-				<img src="ofad (1).jpg" class=designs>&nbsp;&nbsp;<img src="ofad (2).jpg" class=designs>
-				&nbsp;&nbsp;<img src="ofad (4).jpg" class=designs>&nbsp;&nbsp;<img src="ofad (3).jpg" class=designs>&nbsp;&nbsp;<img src="ofad (9).jpg" class=designs><br><br>
-				<img src="ofad (5).jpg" class=designs>&nbsp;&nbsp;<img src="ofad (6).jpg" class=designs>
-				&nbsp;&nbsp;<img src="ofad (7).jpg" class=designs>&nbsp;&nbsp;<img src="ofad (8).jpg" class=designs>&nbsp;&nbsp;<img src="ofad (1).0.jpg" class=designs>
-			</div>
-		</div>
-		<br><br>
-		<div class=designblock>SOFTWARE ENGINEERING PROJECT (2017)<br>
-			<p class=tinytext>For our Software Engineering project, we were tasked to find a client to create a system for.
-			I was the one tasked for handling all visual assets for the system as well as the user manual.<br> These are some of the pages I've designed for the User Manual for the Be Organic Bath and Body Inventory and Sales System.</p>
-			<button class=buttonz2 id=viewsemanual>VIEW</button>
-			<div id=imagecontainer2><br>
-				<img src="semanual (1).jpg" class=designs>&nbsp;&nbsp;<img src="semanual (2).jpg" class=designs>&nbsp;&nbsp;<img src="semanual (3).jpg" class=designs>
-			</div>
-		</div>
-		<br><br>
-		<div class=designblock>FNC 25 FINAL PROJECT (2015)<br>
-			<p class=tinytext>For our final project on our Fitness class during my first year at the University, we were asked to<br>
-			design and print a fitness related magazine. I was the one who designed everything for the magazine.</p>
-			<button class=buttonz2 id=viewfnc>VIEW</button>
-			<div id=imagecontainer3><br>
-				<img src="fitness (8).jpg" class=designs>&nbsp;&nbsp;<img src="fitness (7).jpg" class=designs>&nbsp;&nbsp;<img src="fitness (1).jpg" class=designs>&nbsp;&nbsp;<img src="fitness (2).jpg" class=designs>&nbsp;&nbsp;<img src="fitness (3).jpg" class=designs>&nbsp;&nbsp;<img src="fitness (4).jpg" class=designs><br><br>
-				<img src="fitness (5).jpg" class=designs>&nbsp;&nbsp;<img src="fitness (6).jpg" class=designs>&nbsp;&nbsp;<img src="fitness (9).jpg" class=designs>&nbsp;&nbsp;<img src="fitness (10).jpg" class=designs>&nbsp;&nbsp;<img src="fitness (11).jpg" class=designs>&nbsp;&nbsp;<img src="fitness (12).jpg" class=designs><br><br>
-				<img src="fitness (13).jpg" class=designs>&nbsp;&nbsp;<img src="fitness (14).jpg" class=designs>&nbsp;&nbsp;<img src="fitness (15).jpg" class=designs>
-			</div>
-		</div>
-	</div>
-
-	<!---WRAPPER 2-->
-
-
-	<!---WRAPPER 3-->
-
-	<div class=mountain3 id=wrapper3><br><p class=header2>DIGITAL DESIGN</p>
-		<div class=designblock>FNC 25 FINAL PROJECT (2015)<br>
-			<p class=tinytext>For our final project on our Fitness class during my first year at the University, we were asked to<br>
-			design and print a fitness related magazine. I was the one who designed everything for the magazine.</p>
-			<button class=buttonz2 id=viewofad>VIEW</button>
-		</div>
-	</div>
+<br>
+<div style="text-align:center;">
+  <h3 class=header>10th UST OFAD LAYOUT DESIGN CONTEST (2018)</h3>
+<a href=ust_appkit.png><img src=ust_appkit.png class=thumb></a>&nbsp;&nbsp;
+<a href=ust_brochure.png><img src=ust_brochure.png class=thumb></a>&nbsp;&nbsp;
+<a href=ust_brochure2.png><img src=ust_brochure2.png class=thumb></a><br><br>
+<a href=ust_layout.png><img src=ust_layout.png class=thumb></a>
+<a href=ust_poster.png><img src=ust_poster.png class=thumb></a>&nbsp;&nbsp;
+<a href=ust_souvenir.png><img src=ust_souvenir.png class=thumb></a>
+  <h3 class=header>FITNESS CLASS MAGAZINE (2016)</h3>
+ <a href=fnc_1.png><img src=fnc_1.png class=thumb></a>&nbsp;&nbsp;
+ <a href=fnc_2.png><img src=fnc_2.png class=thumb></a>&nbsp;&nbsp;
+  <a href=fnc_3.png><img src=fnc_3.png class=thumb></a><br><br>
+  <a href=fnc_4.png><img src=fnc_4.png class=thumb></a>&nbsp;&nbsp;
+  <a href=fnc_5.png><img src=fnc_5.png class=thumb></a>&nbsp;&nbsp;
+  <a href=fnc_6.png><img src=fnc_6.png class=thumb></a>
+  <h3 class=header>CKSC SENIOR PROM PROHIxINHI (2015)</h3>
+   <a href=fncksc_0.png><img src=cksc_0.png class=thumb></a>&nbsp;&nbsp;
+   <a href=fncksc_1.png><img src=cksc_1.png class=thumb></a>&nbsp;&nbsp;
+   <a href=fncksc_2.png><img src=cksc_2.png class=thumb></a><br><br>
+   <a href=fncksc_3.png><img src=cksc_3.png class=thumb></a>&nbsp;&nbsp;
+  <a href=fncksc_4.png><img src=cksc_4.png class=thumb></a>&nbsp;&nbsp;
+  <a href=fncksc_5.png><img src=cksc_5.png class=thumb></a>
+</div> 
+<br>
 </body>
-	</html>
+</html>
